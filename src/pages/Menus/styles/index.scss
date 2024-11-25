@@ -1,0 +1,80 @@
+$primary: #690BC8;
+
+// Variables de breakpoints
+$breakpoint-xs: 575px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+.menuIcon{ 
+  width : 35px;
+  height: 35px 
+}
+
+.btnAdd {
+  position: relative;
+  right: -90%;
+  width:  60px;
+  height: 60px;
+  margin-bottom: 12px;
+  background-color: $primary;
+  border-color    : $primary;
+}
+
+
+.iconsMobile{
+  display: none;
+}
+
+
+@media (max-width: #{$breakpoint-xs}) {
+  .btnAdd {
+    right: -75%;
+  }
+
+  .menuIcon{
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .iconsMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pencilDesktop{
+    display: none;
+  }
+
+  .submenusDesktop{
+    display: none;
+  }
+}
+
+// Small (SM) desde 576px hasta 767px
+@media (min-width: #{$breakpoint-sm}) and (max-width: 767px) {
+
+}
+
+// Medium (MD) desde 768px hasta 991px
+@media (min-width: #{$breakpoint-md}) and (max-width: 991px) {
+}
+
+// Large (LG) desde 992px hasta 1199px
+@media (min-width: #{$breakpoint-lg}) and (max-width: 1199px) {
+
+}
+
+@media (min-width: #{$breakpoint-xl}) and (max-width: 1399px) {
+
+}
+
+@media (min-width: #{$breakpoint-xxl}) {
+  .btnAdd {
+    right: -95%;
+  }
+}

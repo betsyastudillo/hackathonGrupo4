@@ -1,0 +1,47 @@
+.plus-icon {
+  transition: stroke 0.3s ease;  /* Suave transición del color */
+}
+
+.plus-icon:hover {
+  stroke: white !important; /* Cambia el color a blanco cuando se hace hover */
+  color: white !important;
+}
+
+.bodyTable {
+  min-width: 320px !important;
+  overflow-x: auto; /* Solo habilita el scroll horizontal */
+  overflow-y: hidden; /* Evita el scroll vertical */
+  white-space: nowrap; /* Previene que el contenido se ajuste a múltiples líneas */
+}
+
+
+.search-icon{
+  top: 50%;
+  left: 10px; /* Ajusta según tu preferencia */
+  transform: translateY(-50%);
+  pointer-events: none; /* Para que no interfiera con el clic en el input */
+}
+
+.outputData {
+  border-radius: 0 !important;
+  border: 'none' !important;
+  border-bottom: '1px #690BC8 solid' !important;
+  background-image: 'none' !important;
+}
+
+.font-title-form {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.h5-title {
+  margin: 16px 0px 8px 0px;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.secondParragraph{
+  margin-top: 40px !important;
+}

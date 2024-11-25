@@ -1,0 +1,39 @@
+.f-bold{
+  font-weight: bold;
+}
+
+.search-icon{
+  top: 50% !important;
+  left: 15px !important;
+  transform: translateY(-55%) !important;
+  pointer-events: none;
+}
+
+.bodyCardAsociatedProfiles{
+  min-height: 420px;
+  padding: 0px 16px;
+}
+
+.tableComplete {
+  width: 100%;
+  overflow-x: auto; /* Habilita el scroll horizontal si es necesario */
+  padding: 0px 16px;
+}
+
+.tableMaxWidth {
+  max-width: 100px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal !important;
+  line-clamp: 2 !important;
+
+}
+
+
+.tableFieldsm {
+  width: 50px;
+}
+
+.bodyCardAssignProfiles{
+  min-height: 150px;
+}

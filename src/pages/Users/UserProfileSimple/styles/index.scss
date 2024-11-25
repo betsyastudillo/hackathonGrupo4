@@ -1,0 +1,45 @@
+$primary: #690BC8;
+
+// Variables de breakpoints
+$breakpoint-xs: 575px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+.maxWidth_btn{
+  max-width: 120px;
+}
+
+@media (max-width: #{$breakpoint-xs}) {
+}
+
+// Small (SM) desde 576px hasta 767px
+@media (min-width: #{$breakpoint-sm}) and (max-width: 767px) {
+
+}
+
+// Medium (MD) desde 768px hasta 991px
+@media (min-width: #{$breakpoint-md}) and (max-width: 991px) {
+}
+
+// Large (LG) desde 992px hasta 1199px
+@media (min-width: #{$breakpoint-lg}) and (max-width: 1199px) {
+
+}
+
+@media (min-width: #{$breakpoint-xl}) and (max-width: 1399px) {
+
+}
+
+@media (min-width: #{$breakpoint-xxl}) {
+}
+
+.bodyCardEditable{
+  padding: 0 1.5rem m !important;
+}
+
+.inputFecha {
+  padding-top: 1.25rem !important;
+}

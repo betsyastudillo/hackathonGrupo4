@@ -1,0 +1,20 @@
+$primary: #690BC8;
+
+.btn-add-category{
+  width:  55px;
+  height: 55px;
+  margin-bottom: 12px;
+  background-color: $primary;
+  border-color    : $primary;
+}
+
+.card-search-categories{
+  max-width: 450px;
+}
+
+.bodyTable {
+  min-width: 320px !important;
+  overflow-x: auto; /* Solo habilita el scroll horizontal */
+  overflow-y: hidden; /* Evita el scroll vertical */
+  white-space: nowrap; /* Previene que el contenido se ajuste a múltiples líneas */
+}

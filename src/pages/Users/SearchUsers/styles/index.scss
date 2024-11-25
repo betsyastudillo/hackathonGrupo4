@@ -1,0 +1,14 @@
+.search-icon{
+  top: 50%;
+  left: 10px; /* Ajusta según tu preferencia */
+  transform: translateY(-50%);
+  pointer-events: none; /* Para que no interfiera con el clic en el input */
+}
+
+.f-bold{
+  font-weight: bold;
+}
+
+.bodyTable{
+  min-width: 720px;
+}

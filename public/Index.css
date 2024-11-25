@@ -1,0 +1,620 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*Para quitar estilos por defecto del navegador*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    height: 50px;
+    background-color: #222;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nombre-empresa{
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    color: black;
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    color: #fff;
+}
+
+nav a:hover{
+    color:rgb(102, 83, 83)
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .Inicio{
+    color:#cc2f2f;
+}
+
+#userContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#userPhoto{
+    margin: 8px;
+    border: 4px solid #ffffff;
+}
+
+#userName{
+    font-family: sans-serif;
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+#logoutButton{
+    padding: 2px;
+    background-color: #8f0a0a;
+    border: 2px solid #8f0a0a;
+    color:#fff;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+#logoutButton:hover{
+    background-color: #550505;
+    border: 2px solid #3b0404;
+    transform: translate(-3%);
+}
+
+#loginContainer{
+    padding: 10px;
+    margin-left: 60px;
+    background-color: #8f0a0a;
+    border-radius: 14px;
+}
+
+#loginContainer:hover{
+    background-color: #500606;
+}
+
+#loginContainer a:hover{
+    color: #ffffff;
+}
+
+/*todo codigo de carrousel*/
+
+#Itemscarrousel{
+    height: 500px;
+    width: 100%; /* Ajusta el contenedor al 100% del ancho de la pantalla */
+    max-width: 1480px; /* Establece un ancho máximo */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    box-shadow: 0px 1px 10px rgba(53, 0, 0, 0.158);
+}
+
+.carrousel {
+    height: 500px;
+    width: 100%; /* Se ajusta al 100% del contenedor padre */
+    max-width: 1480px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el carrusel */
+    position: relative;
+}
+
+
+.imagenesCarrousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hará que la imagen se ajuste sin deformarse */
+}
+
+.flechasCarrousel {
+    /*La posicion dependera de donde se encuentre el siguiente elemento*/
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Ajusta el padding si es necesario */
+}
+
+#imagenCarrousel-1 {
+    background-color: rgb(57, 31, 172);
+
+}
+
+#imagenCarrousel-2 {
+    background-color: rgba(228, 132, 42, 0.384);
+
+}
+
+#imagenCarrousel-3 {
+    background-color: rgba(11, 64, 163, 0.911);
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: white;
+}
+
+/*Fin codigo del carrousel*/
+
+
+/*comienza el codigo de las columnas de kheynner*/
+/*OJO no confundir con el codigo que viene*/
+/*este es el de las tres columnas chulas*/
+
+#contenedor_columnas{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0 auto; /* Centra horizontalmente */
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+/*columnas*/
+.columnas{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+/*efecto columnas*/
+.columnas:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+/*imagen columna*/
+.columnas img{
+    width: 100%;
+    height: 210px;
+}
+
+/*estilo para centrar el texto y espaciado*/
+.columnas .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+/*el espaciado entre lineas y el color a la etiqueta parrafo*/
+.columnas .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+/*css a el encabezado h3 de las columnas*/
+.columnas .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/*efecto de boton para el hyper-vinculo*/
+.columnas .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #cc2f2f;
+    border: 1px solid #cc2f2f;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+/*efecto de seleccion al boton*/
+.columnas .contenido a:hover{
+    background: #cc2f2f;
+    color: #fff;
+}
+/*fin de las tres columnas - FIN DE LAS TRES COLUMNAS*/
+
+
+
+/*Kheynner - segunda seccion*/
+/*este codigo busca formar el efecto anterior pero aplicado a dos columnas*/
+/*el proceso varia mucho del anterior por favor tocar con cuidado o NO TOCAR*/
+
+/*sector donde se ubican las columnas y la personalizacion*/
+#dos_columnas{
+    width: 100%;
+    padding-top: 2%;
+    padding: 2%;
+    display: flex;
+    margin: 0 auto; /* Centra horizontalmente */
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    border: 1px solid rgba(58, 54, 54, 0.151);
+}
+
+/*personalizacion a columnas*/
+.secciones{
+    width: 100%;
+    margin: 0%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    cursor: default;
+}
+
+/*Contenido dentro de las columnas - cabe resaltar que: */
+/*el contenido de adentro es diferente a la otra ejemplo: una contiene texto y otra imagen*/
+.secciones .contenido{
+    padding: 2%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+/*arreglo al parrafo de la columna con el texto*/
+.secciones .contenido p{
+    line-height: 1.5;
+    text-align: justify;
+    color: #6a6a6a;
+}
+
+/*arreglo al encabezado de la columna con el texto*/
+.secciones .contenido h3{
+    text-align: left;
+    text-indent: 4%;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/*ignora esta etiqueta esta en proceso de prueba :^ */
+.secciones .contenido h3 a{
+    color:black;
+    border: 0px;
+    background: 0%;
+}
+
+/*efecto de boton en la columna de texto*/
+.secciones .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    color: #cc2f2f;
+    border: 1px solid #cc2f2f;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+/*efecto cursor/boton en la columna de texto*/
+.secciones .contenido a:hover{
+    background: #cc2f2f;
+    color: #fff;
+}
+
+/*ajuste a la columna con la imagen*/
+.secciones figure img{
+    padding-left: 4%;
+    width: 90%;
+    height: 380px;
+}
+
+/*Formulario kheynner*/
+
+
+.contenedor_formulario{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_formulario .secciones{
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 10%;
+    overflow: hidden;
+    background: #fff;
+    cursor: default;
+}
+
+.contenedor_formulario form{
+    padding: 50px 55px;
+    box-shadow: 0 0  20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.contenedor_formulario .input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contenedor_formulario form h2{
+    color: #8f0a0a;
+    font-size: 35px;
+}
+
+.contenedor_formulario label{
+    color: #8f0a0a;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contenedor_formulario  input, textarea{
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    background-color: #e7d1d1;
+    border: 2px solid #cc5757;
+    color: #8f0a0a;
+    outline: none;
+}
+
+.contenedor_formulario input::placeholder, textarea{
+    color: #c06262;
+}
+
+.contenedor_formulario .formt-text{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenedor_formulario .formt-text a{
+    color: #e23b3b;
+    font-size: 10.8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contenedor_formulario .btn{
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #812e2e;
+    box-shadow: 0 0 20px rgba(179, 24, 24, 0.486);
+    cursor: pointer;
+}
+
+.contenedor_formulario .btn:hover{
+    background-color: #f11c1c;
+    box-shadow: 0 0 20px rgba(201, 14, 14, 0.808);
+    transform: translateY(-10%);
+}
+
+.contenedor_formulario .secciones figure img{
+    width: 100%;
+    height: 340px;
+}
+
+/*pie de pagina*/
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social h4 {
+    margin: 10px 0;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos generales para pantallas de tamaño pequeño (smartphones) */
+@media (max-width: 768px) {
+
+    /* Ajustar el header */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nombre-empresa {
+        font-size: 20px; /* Reducir el tamaño del texto */
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        height: 40px; /* Ajustar tamaño del logo */
+    }
+
+    nav a {
+        display: block; /* Colocar los enlaces en bloque para que se apilen */
+        margin-bottom: 10px;
+    }
+
+    /* Ajustar el carrusel */
+    #Itemscarrousel, .carrousel {
+        height: 300px; /* Reducir la altura del carrusel en pantallas pequeñas */
+    }
+
+    .imagenesCarrousel img {
+        height: 100%;
+    }
+
+    /* Ajustar las columnas */
+    #contenedor_columnas {
+        flex-direction: column; /* Colocar las columnas en una sola fila */
+        padding: 5%;
+    }
+
+    .columnas {
+        margin: 20px 0; /* Añadir margen entre columnas */
+        width: 90%; /* Ajustar el ancho para dispositivos móviles */
+    }
+
+    /* Ajustar las dos columnas */
+    #dos_columnas {
+        flex-direction: column; /* Colocar las dos columnas en una sola fila */
+    }
+
+    .secciones .contenido {
+        margin-left: 0; /* Eliminar márgenes en pantallas pequeñas */
+        padding: 2%;
+    }
+
+    .contenedor_formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor_formulario .secciones{
+        margin: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        overflow: hidden;
+    }
+
+    /* Ajustar el formulario */
+    .contenedor_formulario form {
+        width: 100%; /* Hacer que el formulario ocupe el ancho completo en pantallas pequeñas */
+        padding: 20px 10px;
+    }
+
+    .contenedor_formulario input, .contenedor_formulario textarea {
+        width: 100%; /* Asegurar que los inputs ocupen todo el ancho */
+        margin-bottom: 10px;
+    }
+
+    /* Pie de página */
+    .footer {
+        padding: 15px; /* Reducir el relleno en dispositivos móviles */
+        text-align: center;
+    }
+
+    .footer-links li {
+        display: block; /* Mostrar los enlaces uno debajo del otro */
+        margin: 10px 0;
+    }
+}
+
+/* Para pantallas aún más pequeñas (por ejemplo, dispositivos de 480px o menos) */
+@media (max-width: 480px) {
+
+    /* Ajustar tamaños de fuentes */
+    .nombre-empresa {
+        font-size: 18px;
+    }
+
+    .logo img {
+        height: 30px; /* Ajustar tamaño del logo aún más */
+    }
+
+    nav a {
+        font-size: 14px; /* Reducir tamaño de los enlaces */
+    }
+
+    /* Ajustar aún más el carrusel */
+    #Itemscarrousel, .carrousel {
+        height: 200px;
+    }
+
+    .imagenesCarrousel img {
+        height: 200px; /* Ajustar el tamaño de las imágenes del carrusel */
+    }
+
+    /* Columnas */
+    .columnas img {
+        height: 180px; /* Reducir la altura de las imágenes */
+    }
+
+    /* Formulario */
+    .contenedor_formulario form {
+        padding: 15px;
+    }
+
+    /* Ajustar el pie de página */
+    .footer-links li {
+        margin: 5px 0;
+    }
+}

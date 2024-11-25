@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*Para quitar estilos por defecto del navegador*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(Noticias/1009257-gaming-un-ado-de-13-ans-finit-tetris-et-bat-un-record-mondial.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    height: 50px;
+    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nombre-empresa{
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    color: black;
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    color:rgb(102, 83, 83)
+}
+
+nav .Noticias{
+    color:#cc2f2f;
+}
+
+
+#userContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#userPhoto{
+    margin: 8px;
+    border: 4px solid #ffffff;
+}
+
+#userName{
+    font-family: sans-serif;
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+#logoutButton{
+    padding: 2px;
+    background-color: #8f0a0a;
+    border: 2px solid #8f0a0a;
+    color:#fff;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+#logoutButton:hover{
+    background-color: #550505;
+    border: 2px solid #3b0404;
+    transform: translate(-3%);
+}
+
+#loginContainer{
+    padding: 10px;
+    margin-left: 60px;
+    background-color: #8f0a0a;
+    border-radius: 14px;
+}
+
+#loginContainer:hover{
+    background-color: #500606;
+}
+
+#loginContainer a:hover{
+    color: #ffffff;
+}
+
+
+#decoracion_contenedor{
+    display: flex;
+    width: 100%;
+    height: 3%;
+    background-color: #868585cb;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.vacio{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/*este es el inicio del cuerpo de la pagina Noticias*/
+.contenedor{
+    width: 80%;
+    padding-top: 4%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Centra horizontalmente */
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid rgba(58, 54, 54, 0.151);
+    border-radius: 8px;
+}
+
+/*Sub bloque principal - si le pones border:1px solid #000000 seras capaz de verlo*/
+.noticia_destacada{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 340px;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    font-family: sans-serif;
+    align-items: center;
+    border: 1px solid rgba(41, 39, 39, 0.514);
+    box-shadow: 0 0 5px rgba(41, 39, 39, 0.808);
+    padding-bottom: 30px;
+    transition: all 600ms ease;
+}
+
+/*hace referencia a la seccion figure que contiene la imagen*/
+.n_destacada{
+    width: 100%;
+    height: 50%;
+    border: 1px solid rgba(41, 39, 39, 0.26);
+    padding: 0%;
+}
+
+/*esta es la img son las cofiguraciones que esta tiene dentro del figure*/
+.n_destacada img{
+    width: 100%;
+    height: 100%;
+}
+
+/*contenido de la noticia destacada*/
+.noticia_destacada .contenido{
+    width: 100%;
+}
+
+/*titulo de la noticia destacada*/
+.noticia_destacada h1{
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+/*parrafo de la noticia destacada*/
+.noticia_destacada p{
+    text-align: center;
+    padding-bottom: 20px;
+    color:#00000098;
+}
+
+/*boton de leer mas*/
+.noticia_destacada a{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #cc2f2f;
+    transition: all 400ms ease;
+    padding: 15px;
+    font-weight: 600;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    color: #cc2f2f;
+    border-radius: 14px;
+    transition: all 400ms ease;
+}
+
+.noticia_destacada:hover{
+    transform: translateY(-4%);;
+    box-shadow: -10px 10px 10px rgba(41, 39, 39, 0.925);
+}
+
+.noticia_destacada a:hover{
+    background: #cc2f2f;
+    color: #fff;
+}
+
+/*Los cuatro cajones*/
+.otras_noticias{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    transition: all 600ms ease;
+}
+
+.otras_noticias .noticias{
+    width: 24%;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid rgba(41, 39, 39, 0.514);
+    box-shadow: 0 0 5px rgba(41, 39, 39, 0.808);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 30px;
+}
+
+.otras_noticias figure{
+    width: 210px;
+    border-radius: 10px;
+    border-bottom: 1px solid #00000067;
+}
+
+.otras_noticias figure img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.otras_noticias h2{
+    padding: 5px;
+    font-size: 15px;
+    cursor: default;
+}
+
+.otras_noticias p{
+    font-size: 12px;
+    color: #00000081;
+    padding-bottom: 20px;
+    cursor: default;
+}
+
+.otras_noticias a{
+    padding: 10px;
+    border: 2px solid #cc2f2f;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: all 400ms ease;
+    text-decoration: none;
+    color:#cc2f2f;
+}
+
+.otras_noticias .noticias:hover{
+    transform: translateY(-3%);;
+    box-shadow: -10px 10px 10px rgba(41, 39, 39, 0.411);
+}
+
+.otras_noticias a:hover{
+    background-color: #cc2f2f;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*pie de pagina*/
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social h4 {
+    margin: 10px 0;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    /* Ajustar el header */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nombre-empresa {
+        font-size: 15px; /* Reducir el tamaño del texto */
+        margin-bottom: 10px;
+        margin-right: 70px;
+    }
+
+    .logo img {
+        height: 40px; /* Ajustar tamaño del logo */
+        visibility: hidden;
+    }
+
+    nav a {
+        display: block; /* Colocar los enlaces en bloque para que se apilen */
+        margin-bottom: 10px;
+    }
+
+    .contenedor{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .otras_noticias{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        transition: all 600ms ease;
+    }
+    
+    .otras_noticias .noticias{
+        width: 55%;
+        padding:10px;
+        border-radius: 10px;
+        border: 1px solid rgba(41, 39, 39, 0.514);
+        box-shadow: 0 0 5px rgba(41, 39, 39, 0.808);
+        margin: 20px;
+        margin-left: 100px;
+        padding-bottom: 30px;
+    }
+}

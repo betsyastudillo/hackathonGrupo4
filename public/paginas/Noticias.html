@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Gamer</title>
+    <link rel="icon" href="Noticias/Icon.png" target="_blank">
+    <link rel="stylesheet" href="Noti.css">
+    <script src="https://kit.fontawesome.com/5acbd8e506.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <!-- Encabezado modificado -->
+        <header>
+            <div class="logo">
+                <img src="Icon.png" alt="logo">
+                <h2 class="nombre-empresa">Tienda Gamer</h2>
+            </div>
+            <nav>
+                <a href="/index.html" class="Inicio">Inicio</a>
+                <a href="/paginas/Nosotros/Nosotros.html" class="Nosotros">Nosotros</a>
+                <a href="/paginas/Productos/Productos.html" class="Productos">Productos</a>
+                <a href="/paginas/Noticias.html" class="Noticias">Noticias</a>
+        
+                <div id="userContainer" style="display: none; align-items: center;">
+                    <img id="userPhoto" alt="User Photo" style="width: 50px; height: 50px; border-radius: 50%; cursor: pointer;" onclick="changeProfilePic()">
+                    <span id="userName"></span>
+                    <button id="logoutButton">Cerrar Sesión</button>
+                </div>
+            
+                <div id="loginContainer">
+                    <a href="/paginas/login/login.html">Iniciar Sesión</a>
+                </div>
+            
+                <input type="file" id="file-input" style="display: none;" accept="image/*" onchange="previewImage(event)">
+            
+            </nav>
+        </header>
+        </div>
+        <!--fin encabezado-->
+        
+    
+    <label id="decoracion_contenedor"></label>
+    <label class="vacio"></label>
+
+    <!-- Contenedor principal -->
+    <div class="contenedor">
+        <section class="noticia_destacada">
+            <figure class="n_destacada">
+                <img src="Noticias/Top.png" alt="imagen">
+            </figure>
+            <div class="contenido">
+                <h1>20 Juegos Para 2025</h1>
+                <p>Noticia destacada, articulo sobre los 20 juegos para 2025</p>
+                <a href="Noticias/Noti_1.html">Leer mas...</a>
+            </div>
+        </section>
+        <section class="otras_noticias">
+            <div class="noticias">
+                <figure>
+                    <img src="Noticias/PC.png" alt="imagen">
+                </figure>
+                <div class="contenido">
+                    <h2>Computadores Gamer - Lideres en PC</h2>
+                    <p>¡Elige el juego y la resolución para descubrir qué PC GAMER es ideal para ti!.</p>
+                    <a href="https://gtech.systems">leer mas...</a>
+                </div>
+            </div>
+            <div class="noticias">
+                <figure>
+                    <img src="Noticias/Game.png" alt="imagen">
+                </figure>
+                <div class="contenido">
+                    <h2>instant Gaming</h2>
+                    <p>nstant Gaming es una plataforma increíble para comprar tus juegos de PC, PlayStation, Xbox y Switch...</p>
+                    <a href="https://www.instant-gaming.com/es/?srsltid=AfmBOoqsfqEVSZj_qk9LXo4u8lX5hlGfzl3qR1pBRrs8fpetjaj88Awc">leer mas...</a>
+                </div>
+            </div>
+            <div class="noticias">
+                <figure>
+                    <img src="Noticias/juegos.png" alt="imagen">
+                </figure>
+                <div class="contenido">
+                    <h2>DLSS 3 llega a más juegos esta semana</h2>
+                    <p>entre ellos Dead Rising Deluxe Remaster, Enotria: The Last Song, FINAL FANTASY XVI y God of War Ragnarök.</p>
+                    <a href="https://www.nvidia.com/es-la/geforce/news/dlss-3-dead-rising-final-fantasy-xvi-god-of-war-ragnarok/">leer mas...</a>
+                </div>
+            </div>
+            <div class="noticias">
+                <figure>
+                    <img src="Noticias/Icon.jpg" alt="imagen">
+                </figure>
+                <div class="contenido">
+                    <h2>Pronto...</h2>
+                    <p>Traemos las noticias recientes, a la palma de tus manos.</p>
+                    <a>leer mas...</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <label class="vacio"></label>
+
+    <!--/*pie de pagina*/ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Pro Gamer. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos de servicio</a></li>
+                <li><a href="https://web.whatsapp.com" target="_blank" >Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Síguenos en:</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank" ><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com"  target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+
+    <script src="/inicioycierre.js"></script>
+
+</body>
+</html>

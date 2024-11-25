@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5acbd8e506.js" crossorigin="anonymous"></script>
+    <title>Pantalla Final</title>
+    <link rel="icon" href="/Icon.png" target="_blank">
+    <link rel="stylesheet" href="Productos.css">
+    <script src="app.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>(function(w, d) { w.CollectId = "67108e0748b2ba247e87f18f"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+</head>
+
+<body>
+    <div>
+        <!-- Encabezado modificado -->
+        <header>
+            <div class="logo">
+                <img src="Icon.png" alt="logo">
+                <h2 class="nombre-empresa">Tienda Gamer</h2>
+            </div>
+            <nav>
+                <a href="/index.html" class="Inicio">Inicio</a>
+                <a href="/paginas/Nosotros/Nosotros.html" class="Nosotros">Nosotros</a>
+                <a href="/paginas/Productos/Productos.html" class="Productos">Productos</a>
+                <a href="/paginas/Noticias.html" class="Noticias">Noticias</a>
+        
+                <div id="userContainer" style="display: none; align-items: center;">
+                    <img id="userPhoto" alt="User Photo" style="width: 50px; height: 50px; border-radius: 50%; cursor: pointer;" onclick="changeProfilePic()">
+                    <span id="userName"></span>
+                    <button id="logoutButton">Cerrar Sesión</button>
+                </div>
+            
+                <div id="loginContainer">
+                    <a href="/paginas/login/login.html">Iniciar Sesión</a>
+                </div>
+            
+                <input type="file" id="file-input" style="display: none;" accept="image/*" onchange="previewImage(event)">
+            
+            </nav>
+        </header>
+        </div>
+        <!--fin encabezado-->
+        
+
+<!--Banner-->
+    <div class="banner"></div>
+<!--fin encabezado--> 
+
+<!--Carrito de compras inicio-->
+<section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+        <div class="item">
+            <span class="titulo-item">Xbox series s</span>
+            <img src="Xbox series s.jpeg" alt="" class="img-item" id="series S">
+            <span class="precio-item">$1.500.000</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Xbox Series X</span>
+            <img src="Xbox.jpeg" alt="" class="img-item" id="xbox">
+            <span class="precio-item">$2.500.000</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Play Station 5</span>
+            <img src="Play Station 5.jpeg" alt="" class="img-item" id="Play">
+            <span class="precio-item">$2.500.000</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Elden Ring</span>
+            <img src="Caratulas/Elden Ring.webp" alt="" class="img-item">
+            <span class="precio-item">$180.000</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Resident Evil 2</span>
+            <img src="Caratulas/Resident.webp" alt="" class="img-item">
+            <span class="precio-item">$160.000</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Read Redention 2</span>
+            <img src="Caratulas/Read.webp" alt="" class="img-item">
+            <span class="precio-item">$200.000</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Wukong</span>
+            <img src="Caratulas/GoD.webp" alt="" class="img-item">
+            <span class="precio-item">$250.000</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">COD Vl</span>
+            <img src="Caratulas/COD.webp" alt="" class="img-item">
+            <span class="precio-item">$320.000</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">The last Of Us</span>
+            <img src="Caratulas/Among Us.webp" alt="" class="img-item">
+            <span class="precio-item">$150.800</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+            <!-- 
+            <div class="carrito-item">
+                <img src="Xbox series S.jpeg"" width="80px" alt="">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">Xbox series S</span>
+                    <div class="selector-cantidad">
+                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                    </div>
+                    <span class="carrito-item-precio">$1.500.000,00</span>
+                </div>
+                <span class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                </span>
+            </div>
+            <div class="carrito-item">
+                <img src="Xbox.jpeg" width="80px" alt="">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">Xbox Series X</span>
+                    <div class="selector-cantidad">
+                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                        <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                    </div>
+                    <span class="carrito-item-precio">$2.000.000,00</span>
+                </div>
+                <button class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            -->
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total">
+                    $120.000,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+    </div>
+</section>
+
+<script src="/inicioycierre.js"></script>
+
+
+
+
+</body>
+
+
+<script src="Productos.js"></script>
+
+
+
+
+
+
+
+</html>

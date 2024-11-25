@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const app = express();
 
 // Configuración básica
-const port = 4000;
+const port = 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.json()); // Para manejar datos en formato JSON en las solicitudes
